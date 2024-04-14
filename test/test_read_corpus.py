@@ -9,7 +9,7 @@ class TestReadCorpus(unittest.TestCase):
     #  Reads a file from a given path and stores its content in a variable
     def test_read_file_and_store_content_tokens(self):
         corpus = Corpus()
-        corpus.read_corpus('test.txt')
+        corpus.read_corpus('test/test.txt')
         assert 'Satz' in corpus.data
         assert 'Dies' in corpus.data
         assert 'Token' in corpus.data
@@ -17,13 +17,13 @@ class TestReadCorpus(unittest.TestCase):
     #  Tokenizes the content using Spacy's nlp object
     def test_tokenize_content(self):
         corpus = Corpus()
-        corpus.read_corpus('test.txt')
+        corpus.read_corpus('test/test.txt')
         assert len(corpus.data) == 5
 
     #  reads an empty file and returns an empty numpy array
     def test_empty_file_returns_empty_array(self):
         corpus = Corpus()
-        corpus.read_corpus('empty_file.txt')
+        corpus.read_corpus('test/empty_file.txt')
         assert len(corpus.data) == 1
 
     #  raises a FileNotFoundError
