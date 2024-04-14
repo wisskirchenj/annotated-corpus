@@ -1,4 +1,4 @@
-# IDEA EDU Course
+# NLP Corpus annotation
 
 Project implemented in the track 'Python for Science' of hyperskill.org JetBrains Academy. 
 Purpose of doing this project is to make progress in this track and refresh some Python.
