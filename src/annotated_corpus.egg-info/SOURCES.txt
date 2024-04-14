@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/annotated_corpus.egg-info/PKG-INFO
+src/annotated_corpus.egg-info/SOURCES.txt
+src/annotated_corpus.egg-info/dependency_links.txt
+src/annotated_corpus.egg-info/top_level.txt
+src/corpus/__init__.py
+src/corpus/read_corpus.py
+test/test_read_corpus.py
