@@ -28,12 +28,14 @@ class TestReadCorpus(unittest.TestCase):
         assert 'PUNCT' in corpus.data
         assert 'NOUN' in corpus.data
         assert 'be' in corpus.data
+        assert 'GPE' in corpus.data
+        assert 'B' in corpus.data[:, -1]
 
-    #  reads an empty file and returns an empty numpy array
+    #  reads an empty file and returns a numpy array only containing the column names
     def test_empty_file_returns_empty_array(self):
         corpus = Corpus()
         corpus.read_corpus('test/empty_file.txt')
-        assert len(corpus.data) == 1
+        assert corpus.data.ndim == 1
 
     #  raises a FileNotFoundError
     def test_raises_file_not_found_error(self):

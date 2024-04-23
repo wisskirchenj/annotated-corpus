@@ -6,7 +6,7 @@ Purpose of doing this project is to make progress in this track and refresh some
 ## Technology / External Libraries
 
 - Python 3.12.3,
-- with packages: numpy, spacy, unittest, unittest.mock, parameterized
+- with packages: numpy, spacy, pandas, unittest, unittest.mock, parameterized
 
 ## Repository Contents
 
@@ -34,4 +34,6 @@ Have fun!
 13.04.24 Project started and Stage 1 completed. Spacy with en_core_web_sm model is used to tokenize a text and store
 tokens in a numpy array.
 
-23.04.24 Stage 2 completed. Add lemmatisation and POS tagging to the tokens. Preprocess tokens by filtering out.
+23.04.24 
+- Stage 2 completed. Add lemmatisation and POS tagging to the tokens. Preprocess tokens by filtering out.
+- Stage 3 completed. Add named entity recognition to the tokens. Transform ndarray to a pandas dataframe.
