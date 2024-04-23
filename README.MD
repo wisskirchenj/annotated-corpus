@@ -33,3 +33,5 @@ Have fun!
 
 13.04.24 Project started and Stage 1 completed. Spacy with en_core_web_sm model is used to tokenize a text and store
 tokens in a numpy array.
+
+23.04.24 Stage 2 completed. Add lemmatisation and POS tagging to the tokens. Preprocess tokens by filtering out.

@@ -8,4 +8,11 @@ src/annotated_corpus.egg-info/dependency_links.txt
 src/annotated_corpus.egg-info/top_level.txt
 src/corpus/__init__.py
 src/corpus/read_corpus.py
+src/corpus/__pycache__/__init__.cpython-312.pyc
+src/corpus/__pycache__/read_corpus.cpython-312.pyc
+test/empty_file.txt
+test/test.txt
 test/test_read_corpus.py
+test/test_with_specials.txt
+test/__pycache__/test_read_corpus.cpython-312-pytest-8.1.1.pyc
+test/__pycache__/test_read_corpus.cpython-312.pyc
