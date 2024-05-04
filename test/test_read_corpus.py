@@ -15,13 +15,13 @@ class TestReadCorpus(unittest.TestCase):
     #  Tokenizes the content using Spacy's nlp object
     def test_tokenize_content(self):
         corpus = Corpus()
-        corpus.add_lemma_and_pos(corpus.read_corpus('test/test.txt'))
+        corpus.add_nlp_attributes(corpus.read_corpus('test/test.txt'))
         assert len(corpus.data) == 5
 
     #  Tokenizes a file with special characters
     def test_tokenize_filtered_content(self):
         corpus = Corpus()
-        corpus.add_lemma_and_pos(corpus.read_corpus('test/test_with_specials.txt'))
+        corpus.add_nlp_attributes(corpus.read_corpus('test/test_with_specials.txt'))
         self.assertEqual(10, len(corpus.data))
         assert 'This' in corpus.data
         assert '.' in corpus.data
